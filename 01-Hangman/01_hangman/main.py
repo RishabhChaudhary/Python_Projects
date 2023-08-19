@@ -37,4 +37,4 @@ while "_" in result and LIVES > 0:
 if LIVES == 0:
     print(f"Hanged!!! Game Over. The letter was: {selected_word}")
 else:
-    print(f"Yay!!! You Guuessed it -> {selected_word}")
+    print(f"Yay!!! You Guessed it -> {selected_word}")
