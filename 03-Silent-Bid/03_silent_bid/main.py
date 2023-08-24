@@ -9,7 +9,7 @@ bids = {}
 
 while stop_bid != True:
     name = input("What is your name?: ")
-    bid = input("What is your bid?: ")
+    bid = int(input("What is your bid?: "))
 
     bids[name] = bid
     
