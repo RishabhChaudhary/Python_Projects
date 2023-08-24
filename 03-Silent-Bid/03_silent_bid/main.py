@@ -1,4 +1,5 @@
 from art import logo
+import os
 
 print(logo)
 print("Welcome to the secret auction program.")
@@ -15,6 +16,7 @@ while stop_bid != True:
     while True:
         more_bids = input("Are there any other bidders (yes/no)?: ")
         if more_bids == "yes":
+            os.system("clear")
             break
         elif more_bids == "no":
             stop_bid = True
