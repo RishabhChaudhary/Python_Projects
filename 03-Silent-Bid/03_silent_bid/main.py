@@ -22,6 +22,7 @@ while stop_bid != True:
             stop_bid = True
             break
         else:
+            print("Invalid Input. Type (yes or no)")
             continue
 
 # print(bids)
