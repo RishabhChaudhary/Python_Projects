@@ -1,4 +1,5 @@
 from art import logo
+import os
 
 print(logo)
 print("Welcome to the secret auction program.")
@@ -8,18 +9,20 @@ bids = {}
 
 while stop_bid != True:
     name = input("What is your name?: ")
-    bid = input("What is your bid?: ")
+    bid = int(input("What is your bid?: "))
 
     bids[name] = bid
     
     while True:
         more_bids = input("Are there any other bidders (yes/no)?: ")
         if more_bids == "yes":
+            os.system("clear")
             break
         elif more_bids == "no":
             stop_bid = True
             break
         else:
+            print("Invalid Input. Type (yes or no)")
             continue
 
 # print(bids)
